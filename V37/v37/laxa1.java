@@ -39,6 +39,18 @@ public class laxa1 {
 		String telefonnummer = adressInput.nextLine();
 		
 		
+		System.out.println("Information" + "\n");
+		
+		System.out.println("Namn:Johan" + "\n");
+		
+		System.out.println("Ålder:17" + "\n");
+		
+		System.out.println("Adress:Vinga Fyrs Väg 23" + "\n");
+		
+		System.out.println("Postnummer:42341" + "\n");
+		
+		System.out.println("Telefonnummer:0721682767" + "\n");
+		
 	}
 
 }
