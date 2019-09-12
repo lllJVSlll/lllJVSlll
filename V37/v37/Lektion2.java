@@ -13,14 +13,18 @@ public class Lektion2 {
 		String namn2 = "snikker";
 				String namn3 = "KalleBalle";
 				
+				
+				
 				System.out.println("Skriv in ett namn:");
 				
 				String namn4 = input.nextLine(); // läser in ett namn från konsolen
 				
+				System.out.println("Skriv in ett namn: ");
+				
 				String namn5 = input.nextLine();
 		
 				
-			System.out.println("\nNamn:");
+			System.out.println("\n\tNamn:");
 			System.out.println(namn1 + "\n" + namn2 + "\n" + namn3 + "\n" + namn4 + "\n" + namn5);
 		
 	}
