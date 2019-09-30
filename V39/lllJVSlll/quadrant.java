@@ -6,6 +6,7 @@ public class quadrant {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println("Skriv in kordinat X och Y.");
 		Scanner input = new Scanner(System.in);
 
 	    int x = input.nextInt();
