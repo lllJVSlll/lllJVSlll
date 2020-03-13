@@ -24,21 +24,59 @@ public class l {
 		System.out.println(numberof7(numbers));
 		System.out.println(numberofToms(names));
 		System.out.println(find(names));
-		System.out.println(jämna(tal));
+		System.out.println(jämna(numbers));
 	}
 
-	public static void jämna(int [] tal) {
+	public static String antalTal(int[] numbers) {
+		int noll = 0;
+		int ett = 0;
+		int två = 0;
+		int tre = 0;
+		int fyra = 0;
+		int fem = 0;
+		int sex = 0;
+		int sju = 0;
+		int åtta = 0;
+		int nio = 0;
+
+		for (int i = 0; i < numbers.length; i++) {
+			if (numbers[i] == 0) {
+				noll++;
+			} else if (numbers[i] == 1) {
+				ett++;
+			} else if (numbers[i] == 2) {
+				två++;
+			} else if (numbers[i] == 3) {
+				tre++;
+			} else if (numbers[i] == 4) {
+				fyra++;
+			} else if (numbers[i] == 5) {
+				fem++;
+			} else if (numbers[i] == 6) {
+				sex++;
+			} else if (numbers[i] == 7) {
+				sju++;
+			} else if (numbers[i] == 8) {
+				åtta++;
+			} else if (numbers[i] == 9) {
+				nio++;
+			}
+		}
+		String antal = "Antal nollor: " + noll + "/nAntal ettor: " + ett + "/nAntal tvåor: " + två + "/nAntal treor: " + tre + "/nAntal fyror" + fyra +
+		"/nAntal femmor: " + fem + "/nAntal sexor: " + sex + "/nAntal sjuor: " + sju + "/nAntal åttor: " + åtta + "/nAntal nior: " + nio;
+		return antal;
+	}
+
+	public static int jämna(int[] tal) {
 		int container = 0;
-		for (int i = 0; i < tal.length; i++) {
-			if (tal[i] == 2 ||
-					tal[i] == 4 ||
-					tal[i] == 6 ||
-					tal[i] == 8 ) {
+		for (int i = 0; i < tal.length; i++
+				) {
+			if (tal[i] % 2 == 0) {
 				container = container + tal[i];
 			}
-					
+
 		}
-		return;
+		return container;
 	}
 
 	public static int find(String[] names) {
